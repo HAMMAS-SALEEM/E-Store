@@ -7,7 +7,7 @@ body {
 .carousel {
   position: relative;
   height: 400px;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -48,11 +48,14 @@ body {
 }
 
 .carousel__btn--left {
-  left: -45px;
+  left: 15px;
+  background-color: white;
+  z-index: 1;
 }
 
 .carousel__btn--right {
-  right: -45px;
+  right: 15px;
+  background-color: white;
 }
 
 .arrow__button {
