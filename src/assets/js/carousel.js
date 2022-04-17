@@ -2,6 +2,8 @@ const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const prevBtn = document.querySelector('.carousel__btn--left');
 const nextBtn = document.querySelector('.carousel__btn--right');
+const dotsNav = document.querySelector('.carousel__nav');
+const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 slides.forEach((img, idx) => {
@@ -56,3 +58,16 @@ nextBtn.addEventListener('click', () => {
   const nextSlide = currentSlide.nextElementSibling;
   moveSlide(track, currentSlide, nextSlide);
 });
+
+dotsNav.addEventListener('click', (event) => {
+  const targetDot = event.target.closest('button');
+  if (!targetDot) return;
+  const currentSlide = document.querySelector('.current__slide');
+  const currentDot = document.querySelector('.current__carousel-indicator');
+  const targetIndex = dots.findIndex(dot => dot === targetDot);
+  const targetSlide = slides[targetIndex]
+  moveSlide(track, currentSlide, targetSlide);
+
+  currentDot.classList.remove('current__carousel-indicator')
+  targetDot.classList.add('current__carousel-indicator')
+})
