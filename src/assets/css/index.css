@@ -21,7 +21,8 @@ body {
   background: lightgreen;
   height: 100%;
   position: relative;
-  overflow: hidden;
+
+  /* overflow: hidden; */
 }
 
 .carousel__track {
@@ -71,8 +72,6 @@ body {
   display: flex;
   padding: 10px 0;
   justify-content: center;
-
-  /* background: lig  htcoral; */
 }
 
 .carousel__indicator {
