@@ -19,26 +19,32 @@ body {
 
 .carousel__track-container {
   background: lightgreen;
-  position: relative;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel__track {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 100%;
+  transition: transform 250ms ease-in;
 }
 
 .carousel__slide {
   position: absolute;
   top: 0;
   bottom: 0;
+  width: 100%;
 }
 
 .carousel__btn {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
+  border: 0;
+  background: none;
 }
 
 .carousel__btn--left {
@@ -47,4 +53,12 @@ body {
 
 .carousel__btn--right {
   right: -45px;
+}
+
+.arrow__button {
+  font-size: 28px;
+}
+
+.is-hidden {
+  display: none;
 }

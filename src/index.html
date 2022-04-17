@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Store</title>
 </head>
 <body>
     <section class="carousel">
-        <button type="button" class="carousel__btn carousel__btn--left">prev</button>
+        <button type="button" class="carousel__btn carousel__btn--left is-hidden"><span class="arrow__button">&larr;</span></button>
         <div class="carousel__track-container">
             <ul class="carousel__track">
-                <li class="carousel__slide"><img class="carousel__image" src="https://i.pinimg.com/originals/c2/8b/c9/c28bc99dafaeb107246f904f34bae16c.jpg" alt="carousel image"></li>
-                <li class="carousel__slide"><img class="carousel__image" src="https://images.wallpaperscraft.com/image/single/space_galaxy_shine_137572_1280x720.jpg" alt="carousel image"></li>
-                <li class="carousel__slide"><img class="carousel__image" src="https://cdn.wallpapersafari.com/74/30/v23HkS.jpg" alt="carousel image"></li>
-                <li class="carousel__slide"><img class="carousel__image" src="https://wallpaperaccess.com/full/3971879.jpg" alt="carousel image"></li>                
+                <!-- Carousel Images -->
+                <li class="carousel__slide current__slide">
+                    <img class="carousel__image" src='https://i.pinimg.com/originals/c2/8b/c9/c28bc99dafaeb107246f904f34bae16c.jpg' alt="carousel image">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src='https://images.wallpaperscraft.com/image/single/space_galaxy_shine_137572_1280x720.jpg' alt="carousel image">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src='https://cdn.wallpapersafari.com/74/30/v23HkS.jpg' alt="carousel image">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src='https://wallpaperaccess.com/full/3971879.jpg' alt="carousel image">
+                </li>              
             </ul>
         </div>
-        <button type="button" class="carousel__btn carousel__btn--right">next</button>
+        <button type="button" class="carousel__btn carousel__btn--right"><span class="arrow__button">&rarr;</span></button>
     </section>
 </body>
 </html>
